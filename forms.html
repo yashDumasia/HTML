@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: #3f3f3ff7;
+            color: #a7a4a4;
+            text-align: center;
+            font-size: largerq;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" method="get" accept-charset="UTF8" autocomplete="off" enctype="multipart/form-data">
+
+        <h1>-: Personal Details Form :-</h1>
+
+
+        <!-- NAME -->
+
+        <label for="fname">First Name : </label>
+        <input type="text" placeholder="First Name" name="First Name" id="fname" style="text-align: center;"> <br>
+        <label for="mname">Midle Name : </label>
+        <input type="text" placeholder="Midle Name" name="Midle Name" id="mname" style="text-align: center;"> <br>
+        <label for="lname">Last Name : </label>
+        <input type="text" placeholder="Last Name" name="Last Name" id="lname" style="text-align: center;"> <br><br>
+
+
+        <!-- Birth-Date -->
+
+        <label for="bdate">Date Of Birth : </label>
+        <input type="date" name="Birth-Date" id="bdate"><br>
+        <label for="bweek">Birth Time : </label>
+        <input type="time" name="Birth-Week" id="bweek"><br><br>
+
+
+        <!-- Gender -->
+
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label> <br><br>
+
+
+        <!-- Language Known -->
+
+        <label for="lk">Language Known : </label>
+        <input type="checkbox" name="lk" id="eng"><label for="eng">English</label>
+        <input type="checkbox" name="lk" id="hindi"><label for="hindi">Hindi</label>
+        <input type="checkbox" name="lk" id="guj"><label for="guj">Gujrati</label>
+        <input type="checkbox" name="lk" id="fre"><label for="fre">French</label>
+        <input type="checkbox" name="lk" id="ger"><label for="ger">Germony</label> <br><br>
+
+
+        <!-- Another Details -->
+
+        <label for="city">Birth City : </label>
+        <select name="City" id="city" style="text-align: center;">
+            <option value=" Ahemdabad">Ahemdabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Navsari">Navsari</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Somnath">Somnath</option>
+            <option value="Valsad">Valsad</option>
+            <option value="Bharuch">Bharuch</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Anand">Anand</option>
+            <option value="Nadiad">Nadiad</option>
+        </select><br>
+
+        <label for="study">Study In : </label>
+        <input list="study" name="Study" style="text-align: center;">
+        <datalist id="study">
+            <option value="Gujrati Medium(GSEB)">Gujrati Medium(GSEB)</option>
+            <option value="English Medium(GSEB)">English Medium(GSEB)</option>
+            <option value="English Medium(CBSE)">English Medium(CBSE)</option>
+        </datalist><br>
+
+        <label for="email">Email : </label>
+        <input type="email" name="Email" id="email" placeholder="Enter Your Email" value="ABCD@xyz.com"
+            style="text-align: center;"><br>
+        <label for="pass">Password : </label>
+        <input type="password" name="password" id="pass" placeholder="Password" style="text-align: center;"><br><br>
+
+
+        <!-- Photo -->
+
+        <label for="photo">Browse Your Passportsize Photo : </label>
+        <input type="file" name="photo" id="photo"><br><br>
+
+
+        <!-- Reset or Submit Button -->
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
